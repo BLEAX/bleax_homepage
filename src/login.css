@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Audiowave"); /* 조금 예쁜 폰트 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2em;
+  color: #fff;
+  user-select: none;
+}
+
+.navigation a {
+  /*navigation 클래스의 a 태그들만 적용*/
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  bottom: -6px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+}
+
+.navigation .btnLogin_popup {
+  width: 130px;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 40px;
+  transition: 0.5s;
+}
+
+.navigation .btnLogin_popup:hover {
+  background: #fff;
+  color: #162938;
+}
