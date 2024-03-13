@@ -1,23 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
-  return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>here is what I have to modify.</p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
+class Subject extends Component { //컴포넌트 함수
+  render() {  //
+    return (
+      <header>
+        <h1>how to use react component</h1>
       </header>
+    );
+  }
+}
+
+class App extends Component {
+  render() {
+    return ( 
+    <div className='App'>
+      <Subject></Subject>
     </div>
-  );
+    );
+  }
 }
 
 export default App;
